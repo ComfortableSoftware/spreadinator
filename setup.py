@@ -17,20 +17,24 @@ setup(
   author="GaelicGrime",
   author_email="will.angus.blaylock@gmail.com",
   license="GPLv3",
-  name="Bulk File Manager",
-  url="https://github.com/ComfortableSoftware/commonFunctions_py",
+  name="Spreadinator",
+  url="https://github.com/ComfortableSoftware/spreadinator",
   version="0.1.0",
-  package_dir={"bulkFileManager": "bulkFileManager"},
+  package_dir={"spreadinator": "spreadinator"},
   package_data={
-      "bulkFileManager": [
+      "spreadinator": [
           "../doc/*",
       ]
   },
-  packages=["bulkFileManagerk"],
+  packages=["spreadinator"],
   install_requires=[
       "CF",
   ],
   extras_require={
       ],
-  }
+  },
+  scripts=[
+      "scripts/spreadinator",
+      "scripts/respreadinator",
+  ]
 )
