@@ -1,0 +1,372 @@
+"*":
+  "Sublime-Style-Column-Selection": {}
+  "atom-html-preview": {}
+  "atom-ide-code-format":
+    formatOnSave: false
+  "atom-ide-hyperclick":
+    darwinTriggerKeys: "shiftKey,altKey"
+    linuxTriggerKeys: "shiftKey,altKey"
+    win32TriggerKeys: "shiftKey,altKey"
+  "atom-ide-outline":
+    initialDisplay: false
+  "atom-ide-ui":
+    "atom-ide-datatip":
+      datatipDebounceDelay: 500
+    "atom-ide-terminal":
+      cursorBlink: true
+      fontFamily: "Source Code Pro, courier-new, courier, monospace"
+    use:
+      "atom-ide-diagnostics": "never"
+      "atom-ide-diagnostics-ui": "never"
+  "autocomplete-plus":
+    autoActivationDelay: 100
+    maxVisibleSuggestions: 20
+    minimumWordLength: 2
+    strictMatching: true
+  "autocomplete-python":
+    caseInsensitiveCompletion: true
+    useKite: true
+    useSnippets: "all"
+  autosave:
+    enabled: false
+  "bracket-matcher":
+    highlightMatchingLineNumber: true
+  core:
+    autoHideMenuBar: true
+    automaticallyUpdate: false
+    closeDeletedFileTabs: true
+    disabledPackages: [
+      "archive-view"
+      "autocomplete-python"
+      "atom-html-preview"
+      "autosave"
+      "auto-update-plus"
+      "buildium"
+      "Chromo-Color-Previews"
+      "image-view"
+      "language-arduino"
+      "language-c"
+      "language-clojure"
+      "language-csharp"
+      "language-css"
+      "language-gfm"
+      "language-go"
+      "language-java"
+      "language-javascript"
+      "language-less"
+      "language-lsl"
+      "language-lua"
+      "language-make"
+      "language-mustache"
+      "language-objective-c"
+      "language-perl"
+      "language-php"
+      "language-property-list"
+      "language-python"
+      "language-ruby-on-rails"
+      "language-ruby"
+      "language-rust-bundled"
+      "language-sass"
+      "language-shellscript"
+      "language-sql"
+      "language-todo"
+      "language-toml"
+      "language-typescript"
+      "language-xml"
+      "language-yaml"
+      "minimap"
+      "open-on-github"
+      "package-control"
+      "package-generator"
+      "pylint"
+      "rst-preview-pandoc"
+      "script"
+      "spell-check"
+      "split-diff"
+      "wrapperizer"
+      "xml-formatter"
+    ]
+    followSymlinks: false
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      "desktop.ini"
+      ".idea"
+    ]
+    openEmptyEditorOnStart: false
+    packagesWithKeymapsDisabled: [
+      "atom-keyboard-macros"
+      "custom-folds"
+      "highlight-line"
+      "git-diff"
+      "language-markdown"
+    ]
+    packagesWithSnippetsDisabled: [
+      "MagicPython"
+    ]
+    projectHome: "/home/will/.atom/dev/packages"
+    reopenProjectMenuCount: 50
+    restorePreviousWindowsOnStart: "no"
+    telemetryConsent: "limited"
+    themes: [
+      "atom-dark-ui"
+      "Chromodynamics"
+    ]
+    uriHandlerRegistration: "always"
+    useTreeSitterParsers: false
+  "custom-folds":
+    areRegionsFoldedOnLoad: true
+    areRegionsHighlighted: true
+    postfix_0: "fold here ⟰1⟰1⟰1"
+    postfix_1: "fold here ⟰2⟰2⟰2"
+    postfix_2: "fold here ⟰3⟰3⟰3"
+    prefix_0: "fold here ⟱1⟱1⟱1"
+    prefix_1: "fold here ⟱2⟱2⟱2"
+    prefix_2: "fold here ⟱3⟱3⟱3"
+  editor:
+    autoIndentOnPaste: false
+    fontFamily: "Source Code Pro, Menlo, Consolas, DejaVu Sans Mono, monospace"
+    lineHeight: 1.6
+    preferredLineLength: 500
+    scrollPastEnd: true
+    showIndentGuide: true
+    showInvisibles: true
+    softTabs: true
+    tabType: "soft"
+    softWrap: true
+  "exception-reporting":
+    userId: "b54d002a-ce1e-4540-8755-e5d954f2ce78"
+  "file-watcher":
+    promptWhenChange: true
+  "find-and-replace":
+    autocompleteSearches: true
+    liveSearchMinimumCharacters: 2
+    projectSearchResultsPaneSplitDirection: "right"
+    useRipgrep: true
+  "git-diff": {}
+  "git-history":
+    maxCommits: 500
+  github:
+    showDiffIconGutter: true
+    viewChangesForCurrentFileDiffPaneSplitDirection: "right"
+  "highlight-line":
+    enableBackgroundColor: true
+    enableSelectionBorder: true
+    enableUnderline: true
+    hideHighlightOnSelect: true
+    underline: "dashed"
+  "highlight-selected":
+    highlightBackground: true
+    onlyHighlightWholeWords: false
+    showResultsOnScrollBar: true
+  "iv-terminal":
+    defaultLocation: "right"
+  kite:
+    loggingLevel: "info"
+    showWelcomeNotificationOnStartup: false
+  "linter-spell":
+    defaultLanguages: [
+      "en es_any es_mx"
+    ]
+    markdownWords: [
+      "derpy"
+      "md"
+      "UofP"
+    ]
+    personalDictionaryPath: ".atom/personal.txt"
+  "linter-ui-default":
+    alwaysTakeMinimumSpace: true
+    panelHeight: 150
+    useBusySignal: false
+  "markdown-writer":
+    fileExtension: ".md"
+    relativeImagePath: true
+    tableAlignment: "left"
+  minimap:
+    adjustMinimapWidthToSoftWrap: false
+    autoToggle: false
+    ignoreWhitespacesInTokens: true
+    independentMinimapScroll: true
+    moveCursorOnMinimapClick: true
+  "nyan-indent":
+    color: "purple"
+    customColors:
+      "0": "#990000"
+      "1": "#990066"
+      "2": "#995566"
+      "3": "#996699"
+      "4": "#880088"
+    opacity: 70
+    useCustomColors: true
+  "package-generator":
+    createInDevMode: true
+    packageSyntax: "coffeescript"
+  "preview-plus":
+    htmlp: false
+    livePreview: false
+  "rainbow-delimiters":
+    delimiters: [
+      "()"
+      "[]"
+      "{}"
+      "\"\""
+      "''"
+      "``"
+      "“”"
+      "‘’"
+      "«»"
+      "‹›"
+      "<>"
+    ]
+  "rst-preview-pandoc":
+    pandocOpts: "-frst -thtml --webtex"
+  script:
+    cwdBehavior: "Directory of the script"
+    stopOnRerun: true
+  "scroll-through-time":
+    direction: "up"
+    modifierKey: "altKey"
+  "spell-check":
+    addKnownWords: true
+    enableDebug: true
+    grammars: [
+      "source.asciidoc"
+      "source.gfm"
+      "text.git-commit"
+      "text.plain"
+      "text.plain.null-grammar"
+      "source.rst"
+      "text.restructuredtext"
+      "text.md"
+      "source.python"
+    ]
+    locales: [
+      "en-US"
+    ]
+    useSystem: false
+  "split-diff":
+    hideDocks: true
+    turnOffSoftWrap: true
+  "sync-settings":
+    autoCheckForUpdatedBackup: "no"
+    gistId: "f7219cfd5940e5c1761a2742bce379b2"
+    hiddenSettings:
+      _lastBackupTime: "2021-07-11T23:06:22Z"
+    ignoreEol: true
+    installLatestVersion: true
+    personalAccessToken: "328a0526b069cc08de17d5df2e16e165c9cc5f9c"
+  "sync-settings-git-location":
+    gitUrl: "git@github.com:GaelicGrime/atomSync.git"
+  "tabs-to-spaces":
+    onSave: "untabify"
+  "tool-bar":
+    position: "Bottom"
+  "tool-bar-markdown-writer":
+    visibility: "showButtonsOnAll"
+  welcome:
+    showOnStartup: false
+  "xml-formatter":
+    endLineCharacter: "LF (\\n)"
+".coffee.source":
+  editor:
+    autoIndentOnPaste: false
+    preferredLineLength: 500
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: true
+    tabLength: 2
+    tabType: "auto"
+  "tabs-to-spaces":
+    onSave: "untabify"
+  whitespace:
+    removeTrailingWhitespace: true
+".console.python.text":
+  editor:
+    autoIndentOnPaste: false
+    preferredLineLength: 500
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: false
+    tabLength: 2
+    tabType: "soft"
+  "tabs-to-spaces":
+    onSave: "untabify"
+".litcoffee.source":
+  editor:
+    autoIndentOnPaste: false
+    preferredLineLength: 500
+    showIndentGuide: true
+    showInvisibles: true
+".lsl.source":
+  editor:
+    autoIndentOnPaste: false
+    preferredLineLength: 150
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: false
+    tabLength: 2
+    tabType: "soft"
+  "tabs-to-spaces":
+    onSave: "untabify"
+".md.text":
+  editor:
+    autoIndentOnPaste: false
+    preferredLineLength: 200
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: true
+    softWrapHangingIndent: 4
+    tabLength: 2
+    tabType: "soft"
+  "tabs-to-spaces":
+    onSave: "untabify"
+  whitespace:
+    removeTrailingWhitespace: true
+".python.regexp.source":
+  editor:
+    preferredLineLength: 500
+    tabLength: 2
+".python.source":
+  editor:
+    autoIndentOnPaste: false
+    preferredLineLength: 500
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: false
+    tabLength: 2
+    tabType: "soft"
+  "tabs-to-spaces":
+    onSave: "untabify"
+  whitespace:
+    removeTrailingWhitespace: true
+".python.text.traceback":
+  editor:
+    autoIndentOnPaste: false
+    preferredLineLength: 500
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: true
+    tabType: "soft"
+".source.lsl":
+  editor:
+    autoIndentOnPaste: false
+    preferredLineLength: 150
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: true
+    tabLength: 2
+    tabType: "soft"
+  "tabs-to-spaces":
+    onSave: "untabify"
+".text":
+  editor:
+    softWrap: true
+    tabType: "soft"
+  "tabs-to-spaces":
+    onSave: "untabify"
+  whitespace:
+    removeTrailingWhitespace: true
