@@ -1,7 +1,7 @@
 #/usr/bin/env /usr/bin/sh
 
 
-python -m spreadinator -respread
+python -m spreadinator -respread "$@"
 
 
 #
