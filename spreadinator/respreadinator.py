@@ -1,11 +1,11 @@
 #!/usr/bin/env /usr/bin/python
 
 
-import VARS as V
+import spreadinator.VARS as V
 
 
 V.V = V
-locals().update(V.ALL_THE_SPREADINATOR_DATA)
+locals().update(V.ALL_THE_SPREADINATOR_DATA())
 
 
 # * #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*
@@ -36,13 +36,13 @@ def getOptions():
   _renameGroup_ = V.CF_OPT.addAnExclusiveGroup()
   V.CF_OPT.addAGroupArg(
       group_=_renameGroup_,
-      args_=O_RENAME_F[K_ARGS],
-      kwargs_=O_RENAME_F[K_KWARGS],
+      args_=O_RENAME_F()[K_ARGS],
+      kwargs_=O_RENAME_F()[K_KWARGS],
   )
   V.CF_OPT.addAGroupArg(
       group_=_renameGroup_,
-      args_=O_RENAME_T[K_ARGS],
-      kwargs_=O_RENAME_T[K_KWARGS],
+      args_=O_RENAME_T()[K_ARGS],
+      kwargs_=O_RENAME_T()[K_KWARGS],
   )
   # ⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱
   V.CF_OPT.parseArgs()

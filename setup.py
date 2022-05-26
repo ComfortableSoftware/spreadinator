@@ -24,17 +24,17 @@ setup(
   package_data={
       "spreadinator": [
           "../doc/*",
-      ]
+      ],
   },
   packages=["spreadinator"],
   install_requires=[
       "CF",
   ],
-  extras_require={
-      ],
-  },
   scripts=[
       "scripts/spreadinator",
       "scripts/respreadinator",
-  ]
+  ],
 )
+
+
+#
