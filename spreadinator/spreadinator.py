@@ -68,8 +68,10 @@ def getOptions():
       kwargs_=V.O_SOURCE_DIR[K_KWARGS],
   )
   # ⟰_⟰_⟰_⟰_⟰_⟰_⟰_⟰_⟰_⟰_⟰_⟰_⟰_⟰_⟰_⟰_⟰_⟰_⟰_⟰_⟰_⟰_⟰_⟰_⟰_⟰_⟰_⟰_⟰_⟰_⟰_⟰_⟰_⟰_⟰_⟰_⟰_⟰_⟰_⟰_⟰_⟰_⟰_⟰_⟰_⟰_⟰_⟰_⟰_⟰_⟰_⟰_⟰_⟰_⟰_⟰_
-  V.CF_OPT.parseArgs()
-  ARGS = V.CF_OPT.V.ARGS
+  V.CF_OPT.parseKnownIntermixedArgs()
+  V.ARGS = V.CF_OPT.V.ARGS[0]
+  V.ARGS_UNKNOWN = V.CF_OPT.V.ARGS[1]
+
   # 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱
   if (
       (ARGS.sourceDir is not None)

@@ -11,6 +11,9 @@ from CF.SUBM_D import (
 )
 
 
+ARGS = None
+ARGS_UNKNOWN = None
+ARGV = CF_OPTV.ARGV
 V = None
 locals().update(CF_OSV.ALL_THE_OS_DATA)
 locals().update(CF_OSV.CF_V.ALL_THE_VALS)
@@ -204,7 +207,6 @@ Randomly rename destination files while moving or copying them.
 """
   return {
       K_ARGS: [
-          "-r",
           "-ren",
           "-rename",
       ],
@@ -232,7 +234,6 @@ Randomly rename destination files while moving or copying them.
 """
   return {
       K_ARGS: [
-          "-R",
           "-REN",
           "-RENAME",
       ],

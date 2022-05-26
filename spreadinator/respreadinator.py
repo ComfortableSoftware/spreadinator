@@ -45,8 +45,9 @@ def getOptions():
       kwargs_=O_RENAME_T()[K_KWARGS],
   )
   # ⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱⟰⟱
-  V.CF_OPT.parseArgs()
-  V.ARGS = V.CF_OPT.V.ARGS
+  V.CF_OPT.parseKnownIntermixedArgs()
+  V.ARGS = V.CF_OPT.V.ARGS[0]
+  V.ARGS_UNKNOWN = V.CF_OPT.V.ARGS[1]
   # 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱
   if (
       (V.ARGS.renameF is True)
