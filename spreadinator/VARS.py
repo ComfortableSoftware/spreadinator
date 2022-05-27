@@ -11,13 +11,10 @@ from CF.SUBM_D import (
 )
 
 
-ARGS = None
-ARGS_UNKNOWN = None
-ARGV = CF_OPTV.ARGV
-V = None
 locals().update(CF_OSV.ALL_THE_OS_DATA)
 locals().update(CF_OSV.CF_V.ALL_THE_VALS)
-locals().update(CF_OPTK.ALL_THE_OPTION_KEYS)
+locals().update(CF_OPTV.ALL_THE_OPTIONS_DATA)
+V = None
 
 
 # * #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*
@@ -35,20 +32,23 @@ K_MOVE = "K_MOVE"
 # * #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*
 
 
+ARGS = None
+ARGS_UNKNOWN = None
+ARGV = CF_OPTV.ARGV
 CURRENT_DIR_NUM = 0
+DEFAULT_DEST_DIR_CODE = "/storage/media/spreadDestCode"
 DEFAULT_DEST_DIR_ERRS = "/storage/media/spreadDestErrs"
 DEFAULT_DEST_DIR_OTHR = "/storage/media/spreadDestOthr"
 DEFAULT_DEST_DIR_PICS = "/storage/media/spreadDestPics"
-DEFAULT_DEST_DIR_CODE = "/storage/media/spreadDestCode"
 DEFAULT_DEST_DIR_VIDS = "/storage/media/spreadDestVids"
 DEFAULT_SOURCE_DIR = "."
 DRY_RUN = False
+MODE = K_AUTO
 NUM_DEST_DIRS = 300
 NUM_DIR_DIGITS_STR = "03d"
+RENAME = True
 SOURCE_DIR_LIST = []
 SOURCE_FILE_LIST = []
-RENAME = True
-MODE = K_AUTO
 
 
 # * #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*
@@ -314,12 +314,12 @@ Set the root directory to source"""
           "-src",
       ],
       K_KWARGS: {
-          K_ACTION: "store_true",
+          K_ACTION: "append",
           K_DEST: "sourceDir",
           K_HELP: H_SOURCE_DIR,
-          K_NARGS: "?",
+          K_NARGS: "+",
           K_REQUIRED: False,
-          K_TYPE: str,
+          K_TYPE: int,
       }
   }
   # fold here ⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1
@@ -343,6 +343,7 @@ Spreads the source directory tree(s) into the destination trees.
           "-spread",
       ],
       K_KWARGS: {
+          K_ACTION: "store_true",
           K_HELP: H_SPREAD,
           K_REQUIRED: False,
       },
@@ -633,13 +634,18 @@ def ALL_THE_KEYS():
 def ALL_THE_LOCAL_DATA():
   # fold here ⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1
   _dictToRtn_ = {
+      "ARGS_UNKNOWN": ARGS_UNKNOWN,
+      "ARGS": ARGS,
+      "ARGV": ARGV,
       "CURRENT_DIR_NUM": CURRENT_DIR_NUM,
+      "DEFAULT_DEST_DIR_CODE": DEFAULT_DEST_DIR_CODE,
       "DEFAULT_DEST_DIR_ERRS": DEFAULT_DEST_DIR_ERRS,
       "DEFAULT_DEST_DIR_OTHR": DEFAULT_DEST_DIR_OTHR,
       "DEFAULT_DEST_DIR_PICS": DEFAULT_DEST_DIR_PICS,
       "DEFAULT_DEST_DIR_VIDS": DEFAULT_DEST_DIR_VIDS,
       "DEFAULT_SOURCE_DIR": DEFAULT_SOURCE_DIR,
       "DRY_RUN": DRY_RUN,
+      "MODE": MODE,
       "NUM_DEST_DIRS": NUM_DEST_DIRS,
       "NUM_DIR_DIGITS_STR": NUM_DIR_DIGITS_STR,
       "RENAME": RENAME,
