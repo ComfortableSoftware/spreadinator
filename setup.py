@@ -31,8 +31,9 @@ setup(
       "CF",
   ],
   scripts=[
+      "scripts/respread",
+      "scripts/spread",
       "scripts/spreadinator",
-      "scripts/respreadinator",
   ],
 )
 

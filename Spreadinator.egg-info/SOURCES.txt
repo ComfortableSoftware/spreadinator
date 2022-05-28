@@ -5,7 +5,8 @@ Spreadinator.egg-info/SOURCES.txt
 Spreadinator.egg-info/dependency_links.txt
 Spreadinator.egg-info/requires.txt
 Spreadinator.egg-info/top_level.txt
-scripts/respreadinator
+scripts/respread
+scripts/spread
 scripts/spreadinator
 spreadinator/VARS.py
 spreadinator/__init__.py
