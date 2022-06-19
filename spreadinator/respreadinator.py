@@ -4,8 +4,7 @@
 import spreadinator.VARS as V
 
 
-V.V = V
-locals().update(V.ALL_THE_SPREADINATOR_DATA())
+locals().update(V.CF_OS.V.CF_V.ALL_THE_VALS)
 
 
 # * #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*
@@ -14,11 +13,11 @@ locals().update(V.ALL_THE_SPREADINATOR_DATA())
 def makeSourceLists():
   # fold here ⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1
   _picsList_ = V.CF_OS.scanADirForFiles(
-      rootPath_=f"""{V.DEFAULT_DEST_DIR_PICS}""",
+      rootPath_=f"""{V.DEFAULT_DEST_DIR_PICS()}""",
       verbose_=True,
   )
   _vidsList_ = V.CF_OS.scanADirForFiles(
-      rootPath_=f"""{V.DEFAULT_DEST_DIR_VIDS}""",
+      rootPath_=f"""{V.DEFAULT_DEST_DIR_VIDS()}""",
       verbose_=True,
   )
   V.SOURCE_FILE_LIST = [] + _picsList_ + _vidsList_

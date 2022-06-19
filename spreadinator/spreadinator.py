@@ -1,11 +1,11 @@
 #!/usr/bin/env /usr/bin/python
 
 
-import spreadinator.VARS as V1
-V = V1.V
+import spreadinator.VARS as V
 
 
-locals().update(V.ALL_THE_SPREADINATOR_DATA())
+locals().update(V.CF_OS.V.CF_V.ALL_THE_VALS)
+locals().update(V.ALL_THE_KEYS) 
 
 
 # * #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*
